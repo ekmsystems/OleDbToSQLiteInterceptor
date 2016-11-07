@@ -6,7 +6,7 @@ using OleDbToSQLiteInterceptor.Processors;
 
 namespace OleDbToSQLiteInterceptor
 {
-    public class OleDbToSQLite : IDatabaseCommandInteceptor
+    public class OleDbToSQLite : IDatabaseCommandInterceptor
     {
         private readonly List<IDatabaseCommandProcessor> _primaryProcessors;
         private readonly List<IDatabaseCommandProcessor> _secondaryProcessors;
@@ -34,7 +34,7 @@ namespace OleDbToSQLiteInterceptor
             _secondaryProcessors = secondaryProcessors;
         }
 
-        public void Intercept(IDatabase database, DatabaseCommand command)
+        public void Intercept(DatabaseCommand command, IDatabase database)
         {
             foreach (var processor in _primaryProcessors)
                 processor.Process(command, database);

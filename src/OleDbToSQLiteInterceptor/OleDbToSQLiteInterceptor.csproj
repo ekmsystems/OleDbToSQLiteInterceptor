@@ -30,8 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DatabaseConnections, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DatabaseConnections.1.0.1\lib\net35\DatabaseConnections.dll</HintPath>
+    <Reference Include="DatabaseConnections, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DatabaseConnections.1.1.0\lib\net35\DatabaseConnections.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
