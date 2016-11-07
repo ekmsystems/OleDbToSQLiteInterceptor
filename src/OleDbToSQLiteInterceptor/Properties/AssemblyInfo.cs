@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("OleDbToSQLiteInterceptor")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("An interceptor for the DatabaseConnections library that attempts to convert OleDb commands so that they are SQLite compatible.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("EKM Systems")]
 [assembly: AssemblyProduct("OleDbToSQLiteInterceptor")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
